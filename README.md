@@ -1,4 +1,4 @@
 ﻿# CSES-Ultimate-Crawler
 ## Usage
-* python make_pdf.py
-* python main.py
+* python3 make_pdf.py
+* python3 main.py
