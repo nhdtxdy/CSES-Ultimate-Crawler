@@ -21,7 +21,7 @@ def get_problem_list(problem_list, problem_html):
         url = base + problem_url
         r = requests.get(url)
         if r.status_code != 200:
-            print('WHAT THE FUCK BR0')
+            print('WHAT THE phuc BR0')
             raise RuntimeError
         problem_html[task_num] = r.text
         print('Successfully cloned task', task_num)
@@ -84,7 +84,7 @@ def process(d : dict, session_id : str):
         # print(bs)
         tables = bs.find_all('table', class_='narrow')[2:]
         if len(tables) % 3 != 0:
-            print('WHAT THE FUCK')
+            print('WHAT THE FUc')
             raise RuntimeError
         for i in range(0, len(tables), 3):
             test_number += 1
