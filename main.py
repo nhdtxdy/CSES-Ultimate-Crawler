@@ -5,6 +5,7 @@ from time import sleep
 import json
 import os
 import shutil
+import sys
 
 base = 'https://cses.fi'
 
@@ -132,7 +133,10 @@ def main(csrf_token : str, session_id : str):
 
 #2f9e68b2ef201db79f7eef87d76b6c6c *csrf_token
 #d0b963d0e63ac97ab193805e944dc28e682aa655 *session_id
-main('274b88a66aadd9133a98e3c0cf86b6bd', '01a51609e2610e0b4cb2fd0b85301f0cd1d23c0f')
+# main('274b88a66aadd9133a98e3c0cf86b6bd', '01a51609e2610e0b4cb2fd0b85301f0cd1d23c0f')
+
+if __name__ == "__main__":
+    main(sys.argv[1], sys.argv[2])
 
 
 
